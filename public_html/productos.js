@@ -66,6 +66,7 @@ $(document).ready(function () {
             jQuery("#tblproductos").trigger("reloadGrid");
         }
     });
+    
     jQuery("#a3").click(function () {
         var su = jQuery("#tblproductos").jqGrid('setRowData', 11, {amount: "333.00", tax: "33.00", total: "366.00", note: "<img src='images/user1.gif'/>"});
         if (su)
@@ -81,6 +82,13 @@ $(document).ready(function () {
         else
             alert("Can not update");
     });
-
+    
+    jQuery("#buttonEdit").click(function(){
+        if ($("tr#"+rowid).attr("editable") === "1") {
+    // the row having id=rowid is in editing mode
+}
+    });
+    
+  
 
 }); // fin ready

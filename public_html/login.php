@@ -34,7 +34,7 @@ include("loginserv.php");
                                     <input id="pass" name="pass" type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
                                 </div>
                                 <div class="center-block input-login">
-                                    <input type="submit" class="center-block btn btn-danger" placeholder="entrar" />
+                                    <input type="submit" class="center-block btn btn-danger" placeholder="entrar" name="submit" value="Login" />
                                     </div>
                                 </form>
                                 

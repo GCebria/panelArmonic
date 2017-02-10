@@ -8,24 +8,34 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/flick/jquery-ui-custom.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="jqgrid/css/ui.jqgrid.css" />
 
+
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="jqgrid/js/i18n/grid.locale-es.js" type="text/javascript"></script>
+        <script src="jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
+
 	   <script src="js/jquery.min.js" type="text/javascript"></script>
 	   <script src="js/jquery-ui.min.js" type="text/javascript"></script>
        <script src="jqgrid/js/i18n/grid.locale-es.js" type="text/javascript"></script>
        <script src="jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>
         
-        
-        
-       <script src="productos.js" type="text/javascript"></script>
 
-  </head>
-	
-	
+        <script src="categorias.js" type="text/javascript"></script>
+
+    </head>
+
     <body>
 
         <table id="tbltareas"></table>
         <div id="paginacion"> </div>
-        
-        
+
+
+
+        <a href=# id="btn_nuevo">Nuevo</a>
+
+
+        <div id="mensaje"></div>
+
 		
         <br>
 		<a href=# id="btn_nuevo">Nuevo</a>
@@ -35,7 +45,6 @@
 		<div id="mensaje"><div>
 		
 		<br><br>
-		
 
     </body>
 </html>

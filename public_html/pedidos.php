@@ -41,7 +41,7 @@ error_reporting(0);
     $i=0;
     while( $fila = $result->fetch_assoc() ) {
         $respuesta->rows[$i]['id']=$fila["id"];
-       $respuesta->rows[$i]['cell'] = array($fila['idPedido'], $fila['idCliente']);
+       $respuesta->rows[$i]['cell'] = array($fila['idPedido'], $fila['idCliente'], $fila['fecha']);
 
         $i++;
     }

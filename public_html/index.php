@@ -15,7 +15,7 @@
         
         
         
-        <script src="main.js" type="text/javascript"></script>
+       <script src="productos.js" type="text/javascript"></script>
 
   </head>
 	

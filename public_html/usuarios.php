@@ -12,7 +12,7 @@ error_reporting(0);
     $conexion = new mysqli("localhost","root","","armonic");
 
     // Se hace una consulta para saber cuantos registros se van a mostrar
-    $result = $conexion->query("SELECT COUNT(*) AS count FROM productos");
+    $result = $conexion->query("SELECT COUNT(*) AS count FROM userpass");
 
     // Se obtiene el resultado de la consulta
     $fila = $result->fetch_array();
@@ -31,7 +31,7 @@ error_reporting(0);
     $start = $limit*$page - $limit; 
 
     //Consulta que devuelve los registros de una sola pagina
-    $consulta = "SELECT * FROM productos ORDER BY $sidx $sord  LIMIT $start , $limit";
+    $consulta = "SELECT * FROM userpass ORDER BY $sidx $sord  LIMIT $start , $limit";
     $result = $conexion->query($consulta);
 
     // Se agregan los datos de la respuesta del servidor
@@ -41,7 +41,7 @@ error_reporting(0);
     $i=0;
     while( $fila = $result->fetch_assoc() ) {
         $respuesta->rows[$i]['id']=$fila["id"];
-       $respuesta->rows[$i]['cell'] = array($fila['id'], $fila['nombre'], $fila['descripcion'], $fila['precio'], $fila['imagenes'], $fila['videos'], $fila['idCategoria']);
+       $respuesta->rows[$i]['cell'] = array($fila['id'], $fila['user'], $fila['nombre'], $fila['apellidos'], $fila['direccion'], $fila['pass']);
 
         $i++;
     }
@@ -49,3 +49,4 @@ error_reporting(0);
     // La respuesta se regresa como json
     echo json_encode($respuesta);
 ?>
+

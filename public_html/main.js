@@ -5,25 +5,20 @@
  */
 
 
-function cargaModal(){
-//alert("hols");
-//var myNode = document.getElementById(myModal);
-//myNode.innerHTML="";
-        $(`<div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>`).appendTo('#myModal');
-}
+
+//jQuery("#buttonUpdate").click(function () {
+//
+//    var id = jQuery("#tblproductos").jqGrid('getGridParam', 'selrow');
+//    if (id) {
+//
+//        var ret = jQuery("#tblproductos").jqGrid('getRowData', id);
+//        $.ajax({
+//            type: "POST",
+//            dataType: "json",
+//            data: {id: ret.id},
+//            url: "formUpdateProducto.php"
+//        });
+//    } 
+//    jQuery("#tblproductos").trigger("reloadGrid");
+//
+//});

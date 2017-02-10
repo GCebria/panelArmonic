@@ -22,7 +22,9 @@
 
 
         <br/>
-        <a href="form.php" id="btn_nuevo">Nuevo</a>
+
+        <a href="formInsertProducto.php" id="btn_nuevo">Nuevo</a>
+        <a href="" id="buttonUpdate" onclick="actualizarProducto(this)">Actualizar</a>
 
         <br/><br/>
 

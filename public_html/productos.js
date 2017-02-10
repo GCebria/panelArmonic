@@ -65,7 +65,26 @@ $(document).ready(function () {
             ;
             jQuery("#tblproductos").trigger("reloadGrid");
         }
+        
     });
+    
+    jQuery("#buttonUpdate").click(function () {
+
+    var id = jQuery("#tblproductos").jqGrid('getGridParam', 'selrow');
+    if (id) {
+
+        var ret = jQuery("#tblproductos").jqGrid('getRowData', id);
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            data: {id: ret.id},
+            url: "formUpdateProducto.php"
+        });
+    } 
+    jQuery("#tblproductos").trigger("reloadGrid");
+
+});
+    
     
     jQuery("#a3").click(function () {
         var su = jQuery("#tblproductos").jqGrid('setRowData', 11, {amount: "333.00", tax: "33.00", total: "366.00", note: "<img src='images/user1.gif'/>"});

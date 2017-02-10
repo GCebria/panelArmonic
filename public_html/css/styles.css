@@ -49,6 +49,7 @@ ol, ul {
 table {
 	border-collapse: separate;
 	border-spacing: 0;
+        background-color: red;
 }
 caption, th, td {
 	text-align: left;

@@ -15,10 +15,9 @@
         
         
         
-        <script src="main.js" type="text/javascript"></script>
+       <script src="categorias.js" type="text/javascript"></script>
 
   </head>
-	
 	
     <body>
 
@@ -36,7 +35,6 @@
 		
 		<br><br>
 		
-
     </body>
 </html>
 

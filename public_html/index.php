@@ -15,27 +15,35 @@
         
         
         
-        <script src="main.js" type="text/javascript"></script>
+        <script src="productos.js" type="text/javascript"></script>
 
   </head>
 	
 	
     <body>
 
-        <table id="tbltareas"></table>
+        <table id="tblproductos"></table>
         <div id="paginacion"> </div>
         
-        
+   
 		
         <br>
 		<a href=# id="btn_nuevo">Nuevo</a>
-			
+
 		<br><br>
 		
 		<div id="mensaje"><div>
 		
 		<br><br>
-		
+		<a href="#" id="a1">Get data from selected row</a>
+<br />
+<a href="#" id="a2">Delete row 2</a>
+<br />
+<a href="#" id="a3">Update amounts in row 1</a>
+<br />
+<a href="#" id="a4">Add row with id 99</a>
+<script src="manipex.js" type="text/javascript"> </script>
+<br />
 
     </body>
 </html>

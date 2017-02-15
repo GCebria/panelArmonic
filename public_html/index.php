@@ -27,13 +27,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" id="sidebarProductos">Productos</a>
+                        <a href="#" id="sidebarProductos" >Productos</a>
                     </li>
                     <li>
-                        <a href="#" id="sidebarCategorias">Categorias</a>
+                        <a href="#" id="sidebarCategorias" >Categorias</a>
                     </li>
                     <li>
-                        <a href="#" id="sidebarOfertas">Ofertas</a>
+                        <a href="#" id="sidebarOfertas" >Ofertas</a>
                     </li>
                     <li>
                         <a href="#" id="sidebarPedidos">Pedidos</a>
@@ -52,10 +52,10 @@
 
             <br/>
 
-            <div id="mensaje" class="row">
+            <div id="" class="row botones">
 
                 <br/>
-                <a href="formInsertProducto.php" id="btnNuevo" id="btn_nuevo" class="btn btn-primary">Nuevo</a>
+                <a href="#" id="btnNuevo" class="btn btn-primary">Nuevo</a>
                 <a href="#" class="btn btn-primary" id="btnActualizar">Actualizar</a>
                 <a href="#" class="btn btn-primary" id="btnBorrar">Borrar</a>
                 <br />

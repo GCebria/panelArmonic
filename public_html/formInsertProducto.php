@@ -7,7 +7,6 @@
     <body>
         <form action="insertProductos.php" method="post" class="form-horizontal">
             <fieldset>
-
                 <!-- Form Name -->
                 <legend>Insert Producto</legend>
 

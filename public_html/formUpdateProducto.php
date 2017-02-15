@@ -13,10 +13,10 @@
                 <?php
                 error_reporting(0);
 
-                $idProducto = $_POST['id'];
-
+                $id = $_POST['update_id'];
+                
                 $conexion = new mysqli("localhost", "root", "", "armonic");
-                $query = "select *  from productos where id = $idProducto";
+                $query = "select *  from productos where id = $id";
                 $result = $conexion->query($query);
 
                 if ($result != NULL) {
@@ -27,7 +27,8 @@
 
                     </div>
                 </div>';
-                } else {
+                } else {echo $id;
+                
                     echo "no funciona";
                 }
                 ?>

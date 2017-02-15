@@ -10,57 +10,78 @@
 
 
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
     </head>
 
 
     <body>
 
-        <table id="tblproductos"></table>
-        <div id="paginacion"> </div>
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Administrador
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="sidebarProductos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#" id="sidebarCategorias">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="#" id="sidebarOfertas">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="#" id="sidebarPedidos">Pedidos</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!-- Table -->
+            <table id="tbl"></table>
+            <div id="paginacion"> </div>
 
 
 
-        <br/>
 
-        <a href="formInsertProducto.php" id="btn_nuevo">Nuevo</a>
-        <a href="" id="buttonUpdate" onclick="actualizarProducto(this)">Actualizar</a>
+            <br/>
 
-        <br/><br/>
+            <div id="mensaje" class="row">
 
-        <div id="mensaje">
-
-            <br/><br/>
-            <a href="#" id="a1">Get data from selected row</a>
-            <br />
-            <a href="#" id="a2">Delete row 2</a>
-            <br />
-            <a href="#" id="buttonEdit">Update</a>
-            <br /> 
+                <br/>
+                <a href="formInsertProducto.php" id="btnNuevo" id="btn_nuevo" class="btn btn-primary">Nuevo</a>
+                <a href="formUpdateProducto.php" class="btn btn-primary" id="btnActualizar">Actualizar</a>
+                <a href="#" class="btn btn-primary" id="btnBorrar">Borrar</a>
+                <br />
+                <br />
 
 
-            <br /> 
-        </div>
+                <br /> 
+            </div>
 
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="cargaModal()">
-            Launch demo modal
-        </button>
+            <!-- Button trigger modal -->
 
-<!--        <div id="myModal" class="modal modal-fixed-footer">
 
-        </div>-->
+            <!--        <div id="myModal" class="modal modal-fixed-footer">
+            
+                    </div>-->
 
 
 
-        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/jquery.min.js" type="text/javascript"></script>
-        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-        <script src="jqgrid/js/i18n/grid.locale-es.js" type="text/javascript"></script>
-        <script src="jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script> 
-        <script src="productos.js" type="text/javascript"></script>
-        <script src="main.js" type="text/javascript"></script>
+            <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="js/jquery.min.js" type="text/javascript"></script>
+            <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+            <script src="jqgrid/js/i18n/grid.locale-es.js" type="text/javascript"></script>
+            <script src="jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script> 
+            <script src="cargarTablas.js" type="text/javascript"></script>
+            <script src="main.js" type="text/javascript"></script>
     </body>
 
 </html>

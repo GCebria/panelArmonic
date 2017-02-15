@@ -1,13 +1,4 @@
-<?php
-error_reporting(0);
 
-$idProducto = $_POST['id'];
-
-$conexion = new mysqli("localhost", "root", "", "armonic");
-$query = "select *  from productos where id = $idProducto";
-$result = $conexion->query($query);
-        
-?>
 <html>
     <head>
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -17,18 +8,36 @@ $result = $conexion->query($query);
             <fieldset>
 
                 <!-- Form Name -->
-                <legend>Insert Producto</legend>
+                <legend>Actualizar Producto</legend>
 
-                <!-- Text input-->
-                <div class="form-group">
+                <?php
+                error_reporting(0);
+
+                $idProducto = $_POST['id'];
+
+                $conexion = new mysqli("localhost", "root", "", "armonic");
+                $query = "select *  from productos where id = $idProducto";
+                $result = $conexion->query($query);
+
+                if ($result == NULL) {
+                    echo '<div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Nombre</label>  
                     <div class="col-md-4">
-                        <input id="nombre" value="<?php $result[0]->nombre ?>" name="nombre" type="text" placeholder="Nombre" class="form-control input-md" value="">
+                        <input id="nombre" name="nombre" type="text" value=' . $result['nombre'] . ' class="form-control input-md">
 
                     </div>
-                </div>
+                </div>';
+                } else {
+                    echo "no funciona";
+                }
+                ?>
 
                 <!-- Text input-->
+
+
+                <!-- Text input-->
+
+
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Descripcion</label>  
                     <div class="col-md-4">
@@ -55,7 +64,7 @@ $result = $conexion->query($query);
                     </div>
                 </div>
 
-                
+
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="passwordinput">Videos</label>
                     <div class="col-md-4">
@@ -63,7 +72,7 @@ $result = $conexion->query($query);
 
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="passwordinput">idCategoria</label>
                     <div class="col-md-4">
@@ -72,7 +81,7 @@ $result = $conexion->query($query);
                     </div>
                 </div>
 
-                
+
 
                 <!-- Button (Double) -->
                 <div class="form-group">

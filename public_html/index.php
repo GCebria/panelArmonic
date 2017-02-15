@@ -56,7 +56,7 @@
 
                 <br/>
                 <a href="formInsertProducto.php" id="btnNuevo" id="btn_nuevo" class="btn btn-primary">Nuevo</a>
-                <a href="formUpdateProducto.php" class="btn btn-primary" id="btnActualizar">Actualizar</a>
+                <a href="#" class="btn btn-primary" id="btnActualizar">Actualizar</a>
                 <a href="#" class="btn btn-primary" id="btnBorrar">Borrar</a>
                 <br />
                 <br />

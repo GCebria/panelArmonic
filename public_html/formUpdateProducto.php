@@ -19,7 +19,7 @@
                 $query = "select *  from productos where id = $idProducto";
                 $result = $conexion->query($query);
 
-                if ($result == NULL) {
+                if ($result != NULL) {
                     echo '<div class="form-group">
                     <label class="col-md-4 control-label" for="textinput">Nombre</label>  
                     <div class="col-md-4">

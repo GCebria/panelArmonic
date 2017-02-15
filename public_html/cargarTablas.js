@@ -136,13 +136,17 @@ $(document).ready(function () {
             type: "POST",
             dataType: "json",
             data: {id: ret.id},
-            url: "formUpdateProducto.php"
+            url: "formUpdateProducto.php",
+            success: function(){
+                window.location.href = "formUpdateProducto.php";
+            }
+            
         });
          
     } 
     
 
-}, );
+} );
     
     
 

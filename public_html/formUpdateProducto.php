@@ -1,17 +1,4 @@
-
-<html>
-    <head>
-        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <form action="updateProductos.php" method="post" class="form-horizontal">
-            <fieldset>
-
-                <!-- Form Name -->
-                <legend>Actualizar Producto</legend>
-
-                <?php
-                error_reporting(0);
+<?php
 
                 $id = $_POST['update_id'];
                 
@@ -32,6 +19,19 @@
                     echo "no funciona";
                 }
                 ?>
+<html>
+    <head>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form action="updateProductos.php" method="post" class="form-horizontal">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>Actualizar Producto</legend>
+
+                
+               
 
                 <!-- Text input-->
 

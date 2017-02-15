@@ -142,11 +142,12 @@ $(document).ready(function () {
         if (id) {
 
             var ret = jQuery("#tbl").jqGrid('getRowData', id);
+           
             $.ajax({
                 type: "POST",
-                dataType: "json",                
                 url: "formUpdateProducto.php",
-                data: {update_id: ret.id},
+                dataType:"json",
+                data: ({update_id: ret.id}),
                 
                 
             });

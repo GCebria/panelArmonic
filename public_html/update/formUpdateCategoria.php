@@ -1,0 +1,77 @@
+<?php
+$id = $_GET["updateid"];
+
+$conexion = new mysqli("localhost", "root", "", "armonic");
+$query = "select *  from categoria where id = $id";
+$result = $conexion->query($query);
+$followingdata = $result->fetch_assoc();
+?>
+
+<html>
+    <head>
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/main.css" rel="stylesheet" type="text/css"/>
+
+    </head>
+    <body>
+        <div id="wrapper" class="col-md-3">
+
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Administrador
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../index.php" id="sidebarProductos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="../index.php" id="sidebarCategorias">Categorias</a>
+                    </li>
+                    <li>
+                        <a href="../index.php" id="sidebarOfertas">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="../index.php" id="sidebarPedidos">Pedidos</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <form action="updateCategoria.php?id=<?php echo $id?>" method="post" class="form-horizontal">
+            <fieldset class="col-md-9">
+
+                <!-- Form Name -->
+                <legend>Actualizar Producto</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Nombre</label>  
+                    <div class="col-md-4">
+                        <input id="nombre" name="nombre" type="text" value="<?php echo $followingdata['nombre'] ?>" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+
+
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Descripcion</label>  
+                    <div class="col-md-4">
+                        <input id="descripcion" name="descripcion" type="text" value="<?php echo $followingdata['descripcion'] ?>" class="form-control input-md">
+
+                    </div>
+                </div>
+
+
+            </fieldset>
+        </form>
+
+        <script src="../bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="../cargarTablas.js" type="text/javascript"></script>
+        <script src="../main.js" type="text/javascript"></script>
+    </body>
+</html>

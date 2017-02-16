@@ -15,56 +15,59 @@
 
 
     <body>
+        <div class="row">
+            <div id="wrapper" class="col-md-3">
 
-        <div id="wrapper">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand">
+                            <a href="index.php">
+                                Administrador
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" id="sidebarProductos" >Productos</a>
+                        </li>
+                        <li>
+                            <a href="#" id="sidebarCategorias" >Categorias</a>
+                        </li>
+                        <li>
+                            <a href="#" id="sidebarOfertas" >Ofertas</a>
+                        </li>
+                        <li>
+                            <a href="#" id="sidebarPedidos">Pedidos</a>
+                        </li>
 
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul class="sidebar-nav">
-                    <li class="sidebar-brand">
-                        <a href="#">
-                            Administrador
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="sidebarProductos" >Productos</a>
-                    </li>
-                    <li>
-                        <a href="#" id="sidebarCategorias" >Categorias</a>
-                    </li>
-                    <li>
-                        <a href="#" id="sidebarOfertas" >Ofertas</a>
-                    </li>
-                    <li>
-                        <a href="#" id="sidebarPedidos">Pedidos</a>
-                    </li>
-
-                </ul>
+                    </ul>
+                </div>
             </div>
 
 
             <!-- Table -->
-            <table id="tbl"></table>
-            <div id="paginacion"> </div>
+            <div class="col-md-9">
+                <h1 class="text text-primary">
+                    Selecciona una categoria para cargar su contenido.
+                </h1>
+                <table id="tbl"></table>
+                <div id="paginacion"> </div>
 
 
 
-
-            <br/>
-
-            <div id="" class="row botones">
 
                 <br/>
-                <a href="#" id="btnNuevo" class="btn btn-primary">Nuevo</a>
-                <a href="#" class="btn btn-primary" id="btnActualizar">Actualizar</a>
-                <a href="#" class="btn btn-primary" id="btnBorrar">Borrar</a>
-                <br />
-                <br />
+                 <table id="tblDetallesPedidos"></table>
+                <div id="paginacionDetallesPedidos"> </div>
+                
+                <div id="" class="botones">
 
-
-                <br /> 
+                    <br/>
+                    <a href="#" id="btnNuevo" class="btn btn-primary">Nuevo</a>
+                    <a href="#" class="btn btn-primary" id="btnActualizar">Actualizar</a>
+                    <a href="#" class="btn btn-primary" id="btnBorrar">Borrar</a>
+                   
+                </div>
             </div>
-
 
             <!-- Button trigger modal -->
 
@@ -73,15 +76,15 @@
             
                     </div>-->
 
+        </div>
 
-
-            <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
-            <script src="js/jquery.min.js" type="text/javascript"></script>
-            <script src="js/jquery-ui.min.js" type="text/javascript"></script>
-            <script src="jqgrid/js/i18n/grid.locale-es.js" type="text/javascript"></script>
-            <script src="jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script> 
-            <script src="cargarTablas.js" type="text/javascript"></script>
-            <script src="main.js" type="text/javascript"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="jqgrid/js/i18n/grid.locale-es.js" type="text/javascript"></script>
+        <script src="jqgrid/js/jquery.jqGrid.min.js" type="text/javascript"></script> 
+        <script src="cargarTablas.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
     </body>
 
 </html>

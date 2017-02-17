@@ -1,7 +1,7 @@
 <?php
 $id = $_GET["updateid"];
 
-$conexion = new mysqli("localhost", "root", "", "armonic");
+$conexion = new mysqli("localhost", "root", "armonic", "armonic");
 $query = "select *  from categorias where id = $id";
 $result = $conexion->query($query);
 $followingdata = $result->fetch_assoc();

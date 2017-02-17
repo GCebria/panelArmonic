@@ -13,7 +13,7 @@ if($_POST['videos']== NULL){
 $idCategoria = $_POST['idCategoria'];
 //$tabla = $_POST['delete_tabla'];
 //$tabla = $_POST['delete_id'];
-$conexion = new mysqli("localhost", "root", "", "armonic");
+$conexion = new mysqli("localhost", "root", "armonic", "armonic");
 $query = "insert into productos values(0,'$nombre','$descripcion',$precio,'$imagen',$videos,$idCategoria)";
 if (mysqli_query($conexion, $query)) {
     echo "New record created successfully";

@@ -5,7 +5,7 @@ $id = $_GET["id"];
 $idCliente = $_POST['idCliente'];
 $fecha = $_POST['fecha'];
 
-$conexion = new mysqli("localhost", "root", "", "armonic");
+$conexion = new mysqli("localhost", "root", "armonic", "armonic");
 $query = "update pedidos set idCliente='$idCliente', fecha='$fecha' where id='$id'";
 if (mysqli_query($conexion, $query)) {
     echo "New record created successfully";

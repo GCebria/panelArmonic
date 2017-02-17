@@ -43,6 +43,26 @@ INSERT INTO `categorias` (`id`, `nombre`, `descripcion`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `pedidos`
+--
+
+CREATE TABLE `pedidos` (
+  `id` int(11) NOT NULL,
+  `idCliente` int(11) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `pedidos`
+--
+
+INSERT INTO `pedidos` (`id`, `idCliente`, `fecha`) VALUES
+(1, 1, '2017-02-10'),
+(2, 2, '2016-06-09');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `detallepedidos`
 --
 
@@ -82,28 +102,6 @@ INSERT INTO `ofertas` (`id`, `titulo`, `descripcion`, `ruta`) VALUES
 (2, 'Oferta del mes ', 'Descuento en las mejores Orquestas con un 10%', '1.jpg'),
 (3, 'Oferta de la semana ', 'Reserva ya tu banda para fallas', '2.jpg'),
 (4, 'Oferta fallera ', '20% descuento en Charangas', '3.jpg');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `pedidos`
---
-
-CREATE TABLE `pedidos` (
-  `id` int(11) NOT NULL,
-  `idCliente` int(11) NOT NULL,
-  `fecha` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `pedidos`
---
-
-INSERT INTO `pedidos` (`id`, `idCliente`, `fecha`) VALUES
-(1, 1, '2017-02-10'),
-(2, 2, '2016-06-09');
-
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `productos`

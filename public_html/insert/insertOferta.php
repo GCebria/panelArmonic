@@ -7,7 +7,7 @@ $ruta = $_POST['ruta'];
 
 //$tabla = $_POST['delete_tabla'];
 //$tabla = $_POST['delete_id'];
-$conexion = new mysqli("localhost", "root", "", "armonic");
+$conexion = new mysqli("localhost", "root", "armonic", "armonic");
 $query = "insert into ofertas values(0,'$titulo','$descripcion','$ruta')";
 if (mysqli_query($conexion, $query)) {
     echo "New record created successfully";

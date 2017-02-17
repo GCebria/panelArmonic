@@ -2,14 +2,14 @@
 $id = $_GET["updateid"];
 
 $conexion = new mysqli("localhost", "root", "", "armonic");
-$query = "select *  from categoria where id = $id";
+$query = "select *  from categorias where id = $id";
 $result = $conexion->query($query);
 $followingdata = $result->fetch_assoc();
 ?>
 
 <html>
     <head>
-    <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="../css/main.css" rel="stylesheet" type="text/css"/>
 
     </head>
@@ -40,7 +40,7 @@ $followingdata = $result->fetch_assoc();
                 </ul>
             </div>
         </div>
-        <form action="updateCategoria.php?id=<?php echo $id?>" method="post" class="form-horizontal">
+        <form action="updateCategoria.php?id=<?php echo $id ?>" method="post" class="form-horizontal">
             <fieldset class="col-md-9">
 
                 <!-- Form Name -->
@@ -65,7 +65,14 @@ $followingdata = $result->fetch_assoc();
 
                     </div>
                 </div>
-
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="button1id">Acciones</label>
+                    <div class="col-md-8">
+                        <button id="button1id" type="submit" name="button1id" class="btn btn-success">Actualizar</button>
+                        <button id="button2id" type="reset" name="button2id" class="btn btn-default">Atras</button>
+                    </div>
+                </div>
 
             </fieldset>
         </form>

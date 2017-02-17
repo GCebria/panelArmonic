@@ -14,7 +14,7 @@ if($_POST['videos']== NULL){
 $idCategoria = $_POST['idCategoria'];
 //$tabla = $_POST['delete_tabla'];
 //$tabla = $_POST['delete_id'];
-$conexion = new mysqli("localhost", "root", "", "armonic");
+$conexion = new mysqli("localhost", "root", "armonic", "armonic");
 $query = "update productos set nombre='$nombre', descripcion='$descripcion', imagenes='$imagen', videos='$videos', idCategoria='$idCategoria' where id='$id'";
 if (mysqli_query($conexion, $query)) {
     echo "New record created successfully";

@@ -9,7 +9,7 @@ $idrecibido = $_GET['id'];
     if(!$sidx) $sidx =1;
 
     // Se crea la conexión a la base de datos
-    $conexion = new mysqli("localhost","root","","armonic");
+    $conexion = new mysqli("localhost","root","armonic","armonic");
 
     // Se hace una consulta para saber cuantos registros se van a mostrar
     $result = $conexion->query("SELECT COUNT(*) AS count FROM detallepedidos where id='$idrecibido'");

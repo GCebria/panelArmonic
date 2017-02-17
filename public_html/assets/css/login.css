@@ -1,0 +1,23 @@
+.login-background{
+    background:url(../images/1.jpg) left top repeat ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-login-container{
+    padding:30px;
+    margin-left:350px;
+
+}
+
+.panel-login{
+    padding: 70px;
+    margin: 50px;
+        width: 500px;
+    height: 400px;
+}
+
+.input-login{
+    padding-top: 20px;
+}

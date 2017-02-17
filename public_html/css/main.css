@@ -7,6 +7,14 @@ and open the template in the editor.
     Created on : 10-feb-2017, 9:14:43
     Author     : alumno
 */
+
+.logout-icon{
+    float:right;
+    color: white;
+    padding: 15px;
+}
+
+
 .center {
     margin-top:50px;   
 }

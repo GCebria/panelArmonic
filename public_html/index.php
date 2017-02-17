@@ -1,4 +1,13 @@
+<?php
 
+include("loginserv.php");       
+if (!isset($_SESSION['username']))
+{
+    header('Location: login.php');
+}
+
+
+?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,10 +30,17 @@
                 <!-- Sidebar -->
                 <div id="sidebar-wrapper">
                     <ul class="sidebar-nav">
+                        <a class="logout-icon" href="logout.php"><span class="glyphicon glyphicon-log-out " aria-hidden="true"></span></a>
+
                         <li class="sidebar-brand">
+                            <div>
                             <a href="index.php">
                                 Administrador
                             </a>
+                            
+                                
+                            </div>
+                          
                         </li>
                         <li>
                             <a href="#" id="sidebarProductos" >Productos</a>
@@ -88,4 +104,5 @@
     </body>
 
 </html>
+
 
